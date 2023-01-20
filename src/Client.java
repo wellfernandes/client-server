@@ -30,9 +30,6 @@ public class Client {
             scanner.close();
             socket.close();
         }
-
-
-
         while(scanner.hasNext()){
             out.println("Texto: "+ scanner.nextLine());
         }
