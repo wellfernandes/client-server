@@ -7,7 +7,6 @@ public class Client {
     private static Socket socket;
     private static String ip;
     private static int serverPort;
-
     private static PrintStream out;
     private static Scanner scanner;
 
@@ -31,7 +30,7 @@ public class Client {
             socket.close();
         }
         while(scanner.hasNext()){
-            out.println("Texto: "+ scanner.nextLine());
+            out.println("Text: "+ scanner.nextLine());
         }
     }
 }
