@@ -21,7 +21,6 @@ public class Server {
             DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
 
             String serverOut = dataInputStream.readUTF();
-
             dataOutputStream.writeUTF(serverOut);
 
         }catch (IOException e){
